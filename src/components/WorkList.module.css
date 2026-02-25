@@ -72,7 +72,7 @@
   transition: color 0.2s;
 }
 
-.arrow {
+.arrowWrap {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -81,14 +81,39 @@
   border-radius: 50%;
   border: 1px solid currentColor;
   font-size: 0.85rem;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
-.workItem:hover .arrow {
+.arrowUp,
+.arrowRight {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, transform 0.2s;
+  line-height: 1;
+}
+
+.arrowUp {
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(0);
+}
+
+.arrowRight {
+  opacity: 0;
+  transform: translateX(-6px);
+}
+
+.workItem:hover .arrowUp {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.workItem:hover .arrowRight {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Linked work item — stretch anchor to fill the grid row */

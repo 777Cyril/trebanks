@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="3" fill="#1A1A2E"/>
+  <!-- Three forward slashes drawn as parallelogram paths for crisp rendering -->
+  <!-- Slash 1 -->
+  <polygon points="5,24 8,24 11,8 8,8" fill="#2563EB"/>
+  <!-- Slash 2 -->
+  <polygon points="11,24 14,24 17,8 14,8" fill="#2563EB"/>
+  <!-- Slash 3 -->
+  <polygon points="17,24 20,24 23,8 20,8" fill="#2563EB"/>
+</svg>

@@ -23,7 +23,10 @@ export default function WorkList() {
               <div className={styles.projectMeta}>{project.meta}</div>
               <div className={styles.projectYear}>
                 {project.year}
-                <span className={styles.arrow}>↑</span>
+                <span className={styles.arrowWrap}>
+                  <span className={styles.arrowUp}>↑</span>
+                  <span className={styles.arrowRight}>→</span>
+                </span>
               </div>
             </>
           );

@@ -9,7 +9,7 @@ export default function Header() {
       <header className={styles.header}>
         <nav className={styles.right}>
           <a href="#work" className={styles.navLink}>Projects</a>
-          <a href="#work" className={styles.navLink}>Archive</a>
+          <a href="#archive" className={styles.navLink}>Archive</a>
           <a href="#contact" className={styles.navLink}>Info</a>
           <button
             className={styles.menuToggle}
@@ -25,7 +25,7 @@ export default function Header() {
         <div className={styles.menuOverlay} onClick={() => setMenuOpen(false)}>
           <nav className={styles.menuNav} onClick={e => e.stopPropagation()}>
             <a href="#work" className={styles.menuLink} onClick={() => setMenuOpen(false)}>Projects</a>
-            <a href="#work" className={styles.menuLink} onClick={() => setMenuOpen(false)}>Archive</a>
+            <a href="#archive" className={styles.menuLink} onClick={() => setMenuOpen(false)}>Archive</a>
             <a href="#contact" className={styles.menuLink} onClick={() => setMenuOpen(false)}>Info</a>
             <a href="#contact" className={styles.menuLink} onClick={() => setMenuOpen(false)}>Contact</a>
           </nav>

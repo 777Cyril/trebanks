@@ -2,6 +2,7 @@ import './index.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WorkList from './components/WorkList';
+import Archive from './components/Archive';
 import Contact from './components/Contact';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Hero />
       </div>
       <WorkList />
+      <Archive />
       <Contact />
     </>
   );
