@@ -1,14 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import styles from './Hero.module.css';
-
-const COLLAGE_IMAGES = [
-  'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=1000',
-  'https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?auto=format&fit=crop&q=80&w=1000',
-  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000',
-  'https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1000',
-  'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&q=80&w=1000',
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000',
-];
+import LogoCarousel from './LogoCarousel';
 
 const NAME_TEXT = "Tre' Banks";
 
@@ -59,11 +51,7 @@ export default function Hero() {
       </div>
 
       <div className={styles.mediaCol}>
-        <div className={styles.collageWrapper}>
-          {COLLAGE_IMAGES.map((src, i) => (
-            <img key={i} src={src} alt={`Texture ${i + 1}`} className={styles.collageImg} />
-          ))}
-        </div>
+        <LogoCarousel />
       </div>
     </section>
   );
