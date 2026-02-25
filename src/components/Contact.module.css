@@ -21,7 +21,8 @@
 
 .contactLinks {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: flex-start;
 }
@@ -29,16 +30,20 @@
 .ctaButton {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
   padding: 1.5rem 2rem;
   background: var(--text-color);
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 0.9rem;
-  width: 100%;
-  max-width: 300px;
   transition: background 0.3s;
+  /* reset button element styles */
+  border: none;
+  font-family: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
 }
 
 .ctaButton:hover {

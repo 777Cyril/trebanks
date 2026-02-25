@@ -1,5 +1,10 @@
 import styles from './Contact.module.css';
 
+function openCalendly(e) {
+  e.preventDefault();
+  window.Calendly?.initPopupWidget({ url: 'https://calendly.com/trebanks' });
+}
+
 export default function Contact() {
   return (
     <div id="contact" className={styles.contactSection}>
@@ -11,12 +16,16 @@ export default function Contact() {
       </div>
       <div className={styles.contactLinks}>
         <a href="mailto:tre@signal.com" className={styles.ctaButton}>
-          Initiate Contact
+          Contact
           <span className={styles.ctaIcon}>→</span>
         </a>
+        <button onClick={openCalendly} className={`${styles.ctaButton} ${styles.ctaOutline}`}>
+          Schedule a Call
+          <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>→</span>
+        </button>
         <a href="#" className={`${styles.ctaButton} ${styles.ctaOutline}`}>
-          LinkedIn Profile
-          <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>↗</span>
+          LinkedIn
+          <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>→</span>
         </a>
       </div>
     </div>

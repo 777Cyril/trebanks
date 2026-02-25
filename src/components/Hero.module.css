@@ -10,8 +10,7 @@
   border-right: 1px solid var(--line-color);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 3rem;
+  justify-content: center;
   align-items: center;
 }
 
@@ -60,10 +59,6 @@
   display: inline-block;
 }
 
-.apostrophePulse {
-  animation: pulseColor 2s infinite;
-}
-
 .cursor {
   display: inline-block;
   width: 0.1em;
@@ -109,12 +104,6 @@
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
-}
-
-@keyframes pulseColor {
-  0% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(1.2); }
-  100% { opacity: 1; transform: scale(1); }
 }
 
 @keyframes drift {

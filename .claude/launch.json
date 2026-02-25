@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "TreBanks",
-      "runtimeExecutable": "/Users/a777/Desktop/Cursor/TreBanks/start-dev.sh",
-      "runtimeArgs": [],
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["/Users/a777/trebanks-launch.py"],
       "port": 5173
     }
   ]

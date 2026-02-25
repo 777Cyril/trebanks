@@ -38,20 +38,16 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.sidebarCol}>
         <div className={styles.verticalText}>
-          Producer &nbsp;/&nbsp; Consultant &nbsp;/&nbsp; Culture
+          Producer &nbsp;///&nbsp; Consultant &nbsp;///&nbsp; Culture
         </div>
         <div className={styles.sidebarNum}>001</div>
       </div>
 
       <div className={styles.mainCol}>
-        <div className={`label ${styles.identityLabel}`}>Identity Matrix</div>
         <h1 className={styles.nameDisplay}>
           {displayedChars.map((item, i) =>
             item.isApostrophe ? (
-              <span
-                key={i}
-                className={`${styles.apostrophe}${typingDone ? ` ${styles.apostrophePulse}` : ''}`}
-              >
+              <span key={i} className={styles.apostrophe}>
                 {item.char}
               </span>
             ) : (
