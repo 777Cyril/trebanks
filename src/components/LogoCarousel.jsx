@@ -30,9 +30,6 @@ export default function LogoCarousel() {
           ))}
         </div>
       </div>
-
-      {/* Editorial label */}
-      <div className={styles.panelLabel}>Clients &amp; Collaborators</div>
     </div>
   );
 }

@@ -1,11 +1,12 @@
 import styles from './WorkList.module.css';
 
 const PROJECTS = [
-  { name: 'Nike', meta: 'Digital Producer', year: '2023' },
-  { name: 'Animal House', meta: 'Creative Production', year: '2023', href: 'https://www.animalxhouse.com/' },
-  { name: '2Seater', meta: 'Strategy & Direction', year: '2022', href: 'https://www.2seateraudio.com/' },
-  { name: 'Thesis', meta: 'Digital Producer', year: '2022' },
-  { name: 'William Raveis', meta: 'Digital Marketing Specialist', year: '2021' },
+  { name: 'Nike',                   meta: 'Digital Producer' },
+  { name: 'Meta',                   meta: 'Creative Producer' },
+  { name: 'AnimalxHouse Records',   meta: 'Creative Manager',                         href: 'https://www.animalxhouse.com/' },
+  { name: '2SEATER Audio',          meta: 'Strategy, Brand Manager, Experiences',     href: 'https://www.2seateraudio.com/' },
+  { name: 'Thesis',                 meta: 'Senior Producer' },
+  { name: 'William Raveis',         meta: 'Digital Marketing & Technology Specialist' },
 ];
 
 export default function WorkList() {
@@ -13,7 +14,7 @@ export default function WorkList() {
     <div id="work">
       <div className={styles.sectionHeader}>
         <span className={styles.indexNumber}>01.</span>
-        <h2 className="label">Manifest / Engagements</h2>
+        <h2 className="label">Brand Engagements</h2>
       </div>
       <ul className={styles.workList}>
         {PROJECTS.map((project) => {
@@ -21,8 +22,7 @@ export default function WorkList() {
             <>
               <div className={styles.projectName}>{project.name}</div>
               <div className={styles.projectMeta}>{project.meta}</div>
-              <div className={styles.projectYear}>
-                {project.year}
+              <div className={styles.projectArrow}>
                 <span className={styles.arrowWrap}>
                   <span className={styles.arrowUp}>↑</span>
                   <span className={styles.arrowRight}>→</span>

@@ -18,7 +18,7 @@
 
 .workItem {
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-columns: 3fr 2fr auto;
   padding: 2rem;
   border-top: 1px solid var(--line-color);
   border-radius: 12px;
@@ -38,7 +38,7 @@
 
 .workItem:hover .projectName,
 .workItem:hover .projectMeta,
-.workItem:hover .projectYear {
+.workItem:hover .projectArrow {
   color: #fff;
 }
 
@@ -60,15 +60,10 @@
   transition: color 0.2s;
 }
 
-.projectYear {
-  text-align: right;
-  font-family: monospace;
-  font-size: 1rem;
-  color: var(--text-color);
+.projectArrow {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1rem;
   transition: color 0.2s;
 }
 
@@ -133,7 +128,11 @@
   }
 
   .workItem {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     gap: 0.5rem;
+  }
+
+  .projectMeta {
+    display: none;
   }
 }
