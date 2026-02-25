@@ -11,7 +11,7 @@ export default function Contact() {
       <div>
         <span className={styles.indexNumber}>03.</span>
         <p className={styles.contactText}>
-          Operating at the intersection of cultural signaling and commercial strategy. Available for select high-impact consulting engagements, creative direction, and strategic partnerships.
+          Operating at the intersection of cultural signaling and commercial strategy — where fashion, technology, nightlife, and music converge. Available for select consulting engagements, creative direction, and strategic partnerships.
         </p>
         <button onClick={openCalendly} className={styles.startProject}>
           <span className={styles.startProjectLabel}>Start a Project</span>
