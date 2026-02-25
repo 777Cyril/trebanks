@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <div style={{ borderBottom: '1px solid var(--line-color)' }}>
+      <div style={{ marginTop: '44px', borderBottom: '1px solid var(--line-color)' }}>
         <Hero />
       </div>
       <WorkList />

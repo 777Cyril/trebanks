@@ -3,48 +3,116 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  height: 44px;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   z-index: 100;
-  pointer-events: none;
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--line-color);
 }
 
-.header * {
-  pointer-events: auto;
-}
-
-.brandMark {
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.left {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
-.brandMark::before {
-  content: '+1';
-  background: var(--text-color);
-  color: var(--bg-color);
-  padding: 2px 4px;
-  font-size: 0.6rem;
+.phone {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.status {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .navLink {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
   border-bottom: 1px solid transparent;
-  transition: border-color 0.3s;
+  transition: border-color 0.2s;
+  padding-bottom: 1px;
 }
 
 .navLink:hover {
   border-color: var(--text-color);
 }
 
-.divider {
-  margin: 0 1rem;
-  color: var(--line-color);
+.menuToggle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-family: inherit;
+  padding: 0;
+  cursor: crosshair;
+}
+
+/* Full-screen overlay menu */
+.menuOverlay {
+  position: fixed;
+  inset: 44px 0 0 0;
+  background: var(--text-color);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.menuLink {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  padding-bottom: 2px;
+}
+
+.menuLink:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+  .phone {
+    display: none;
+  }
+
+  .right {
+    gap: 1.2rem;
+  }
+
+  .menuLink {
+    font-size: 2rem;
+  }
 }
