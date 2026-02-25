@@ -1,12 +1,12 @@
 import styles from './WorkList.module.css';
 
 const PROJECTS = [
-  { name: 'Nike',                   meta: 'Digital Producer' },
-  { name: 'Meta',                   meta: 'Creative Producer' },
-  { name: 'AnimalxHouse Records',   meta: 'Creative Manager',                         href: 'https://www.animalxhouse.com/' },
-  { name: '2SEATER Audio',          meta: 'Strategy, Brand Manager, Experiences',     href: 'https://www.2seateraudio.com/' },
-  { name: 'Thesis',                 meta: 'Senior Producer' },
-  { name: 'William Raveis',         meta: 'Digital Marketing & Technology Specialist' },
+  { name: 'Nike',                   meta: 'Digital Producer',                          href: 'https://www.nike.com/' },
+  { name: 'Meta',                   meta: 'Creative Producer',                         href: 'https://www.meta.com/' },
+  { name: 'AnimalxHouse Records',   meta: 'Creative Manager',                          href: 'https://www.animalxhouse.com/' },
+  { name: '2SEATER Audio',          meta: 'Strategy, Brand Manager, Experiences',      href: 'https://www.2seateraudio.com/' },
+  { name: 'Thesis',                 meta: 'Senior Producer',                           href: 'https://www.thesis.agency/' },
+  { name: 'William Raveis',         meta: 'Digital Marketing & Technology Specialist', href: 'https://www.raveis.com/' },
 ];
 
 export default function WorkList() {
