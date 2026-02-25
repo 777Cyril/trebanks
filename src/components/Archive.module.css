@@ -10,11 +10,11 @@
   color: var(--accent-color);
 }
 
-/* Column layout: year | client | role | context */
+/* Column layout: client | role | context */
 .tableHead,
 .archiveItem {
   display: grid;
-  grid-template-columns: 80px 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0.6rem 2rem 0.6rem 80px;
 }
 
@@ -47,13 +47,6 @@
   color: var(--text-color);
 }
 
-.year {
-  font-family: monospace;
-  font-size: 0.8rem;
-  color: var(--accent-color);
-  opacity: 0.7;
-}
-
 .client {
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -74,7 +67,7 @@
 
   .tableHead,
   .archiveItem {
-    grid-template-columns: 60px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-left: 50px;
   }
 
