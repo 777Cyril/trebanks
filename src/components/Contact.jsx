@@ -23,7 +23,7 @@ export default function Contact() {
           Schedule a Call
           <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>→</span>
         </button>
-        <a href="#" className={`${styles.ctaButton} ${styles.ctaOutline}`}>
+        <a href="https://www.linkedin.com/in/lawrence-banks-iii/" target="_blank" rel="noopener noreferrer" className={`${styles.ctaButton} ${styles.ctaOutline}`}>
           LinkedIn
           <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>→</span>
         </a>

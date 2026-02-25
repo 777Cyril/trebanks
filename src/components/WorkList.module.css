@@ -91,6 +91,13 @@
   transform: scale(1);
 }
 
+/* Linked work item — stretch anchor to fill the grid row */
+.workItemLink {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
   .sectionHeader {
     padding-left: 50px;
