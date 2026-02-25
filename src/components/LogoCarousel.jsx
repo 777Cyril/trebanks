@@ -1,10 +1,11 @@
 import styles from './LogoCarousel.module.css';
 
 const LOGOS = [
-  { src: '/logos/Logo_NIKE.svg',      alt: 'Nike' },
-  { src: '/logos/THESIS logo.png',    alt: 'Thesis' },
-  { src: '/logos/2seater logo.png',   alt: '2Seater' },
-  { src: '/logos/William R Logo.png', alt: 'William R' },
+  { src: '/logos/Logo_NIKE.svg',           alt: 'Nike' },
+  { src: '/logos/THESIS logo.png',         alt: 'Thesis' },
+  { src: '/logos/2seater logo.png',        alt: '2Seater' },
+  { src: '/logos/William R Logo.png',      alt: 'William R' },
+  { src: '/logos/animal house logo.jpg',   alt: 'Animal House' },
 ];
 
 // Duplicate 4× for a seamless infinite loop
