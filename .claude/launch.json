@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "TreBanks",
+      "runtimeExecutable": "/Users/a777/Desktop/Cursor/TreBanks/start-dev.sh",
+      "runtimeArgs": [],
+      "port": 5173
+    }
+  ]
+}

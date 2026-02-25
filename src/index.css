@@ -1,0 +1,44 @@
+:root {
+  --bg-color: #F8F8F6;
+  --text-color: #1A1A2E;
+  --accent-color: #2563EB;
+  --line-color: rgba(26, 26, 46, 0.15);
+  --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --transition-speed: 0.4s;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+
+.label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

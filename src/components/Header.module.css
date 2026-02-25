@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.header * {
+  pointer-events: auto;
+}
+
+.brandMark {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brandMark::before {
+  content: '+1';
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 2px 4px;
+  font-size: 0.6rem;
+}
+
+.navLink {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.navLink:hover {
+  border-color: var(--text-color);
+}
+
+.divider {
+  margin: 0 1rem;
+  color: var(--line-color);
+}
