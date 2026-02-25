@@ -7,10 +7,6 @@ export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.left}>
-          <span className={styles.phone}>+1 (404) 555-0182</span>
-          <span className={styles.status}>Available for Q3</span>
-        </div>
         <nav className={styles.right}>
           <a href="#work" className={styles.navLink}>Projects</a>
           <a href="#work" className={styles.navLink}>Archive</a>

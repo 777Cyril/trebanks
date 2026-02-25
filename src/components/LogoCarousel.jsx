@@ -5,7 +5,7 @@ const LOGOS = [
   { src: '/logos/THESIS logo.png',         alt: 'Thesis' },
   { src: '/logos/2seater logo.png',        alt: '2Seater' },
   { src: '/logos/William R Logo.png',      alt: 'William R' },
-  { src: '/logos/animal house logo.jpg',   alt: 'Animal House' },
+  { src: '/logos/animal house logo.jpg',   alt: 'Animal House', whiteBg: true },
 ];
 
 // Duplicate 4× for a seamless infinite loop
@@ -21,7 +21,11 @@ export default function LogoCarousel() {
         <div className={styles.track}>
           {TRACK.map((logo, i) => (
             <div key={i} className={styles.slide}>
-              <img src={logo.src} alt={logo.alt} className={styles.logo} />
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className={`${styles.logo}${logo.whiteBg ? ` ${styles.logoWhiteBg}` : ''}`}
+              />
             </div>
           ))}
         </div>

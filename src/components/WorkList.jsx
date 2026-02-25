@@ -1,11 +1,11 @@
 import styles from './WorkList.module.css';
 
 const PROJECTS = [
-  { name: 'Vanguard Audio', meta: 'Sonic Branding / Strategy', year: '2023' },
-  { name: 'Neon Structure', meta: 'Art Direction / Campaign', year: '2023' },
-  { name: 'Off-Grid Systems', meta: 'Product Design / UX', year: '2022' },
-  { name: 'Apex Gallery', meta: 'Spatial Design / Event', year: '2022' },
-  { name: 'Monolith Inc.', meta: 'Brand Identity', year: '2021' },
+  { name: 'Nike', meta: 'Brand & Community', year: '2023' },
+  { name: 'Animal House', meta: 'Creative Production', year: '2023' },
+  { name: '2Seater', meta: 'Strategy & Direction', year: '2022' },
+  { name: 'Thesis', meta: 'Brand Consulting', year: '2022' },
+  { name: 'William Raveis', meta: 'Campaign & Culture', year: '2021' },
 ];
 
 export default function WorkList() {
