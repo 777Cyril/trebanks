@@ -13,16 +13,16 @@ export default function Contact() {
         <p className={styles.contactText}>
           Operating at the intersection of cultural signaling and commercial strategy. Available for select high-impact consulting engagements, creative direction, and strategic partnerships.
         </p>
+        <button onClick={openCalendly} className={styles.startProject}>
+          <span className={styles.startProjectLabel}>Start a Project</span>
+          <span className={styles.startProjectArrow}>→</span>
+        </button>
       </div>
       <div className={styles.contactLinks}>
         <a href="mailto:tre@signal.com" className={styles.ctaButton}>
           Contact
           <span className={styles.ctaIcon}>→</span>
         </a>
-        <button onClick={openCalendly} className={`${styles.ctaButton} ${styles.ctaOutline}`}>
-          Schedule a Call
-          <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>→</span>
-        </button>
         <a href="https://www.linkedin.com/in/lawrence-banks-iii/" target="_blank" rel="noopener noreferrer" className={`${styles.ctaButton} ${styles.ctaOutline}`}>
           LinkedIn
           <span className={`${styles.ctaIcon} ${styles.ctaIconDark}`}>→</span>

@@ -88,6 +88,50 @@
   color: var(--accent-color);
 }
 
+/* ── Start a Project CTA ── */
+.startProject {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: crosshair;
+  font-family: inherit;
+}
+
+.startProjectLabel {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.startProject:hover .startProjectLabel {
+  color: var(--accent-color);
+}
+
+.startProjectArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.startProject:hover .startProjectArrow {
+  background: var(--text-color);
+  transform: translateX(4px);
+}
+
 @media (max-width: 900px) {
   .contactSection {
     grid-template-columns: 1fr;
