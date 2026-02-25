@@ -2,10 +2,10 @@ import styles from './WorkList.module.css';
 
 const PROJECTS = [
   { name: 'Nike', meta: 'Brand & Community', year: '2023' },
-  { name: 'Animal House', meta: 'Creative Production', year: '2023' },
+  { name: 'Animal House', meta: 'Creative Production', year: '2023', href: 'https://www.animalxhouse.com/' },
   { name: '2Seater', meta: 'Strategy & Direction', year: '2022', href: 'https://www.2seateraudio.com/' },
   { name: 'Thesis', meta: 'Brand Consulting', year: '2022' },
-  { name: 'William Raveis', meta: 'Campaign & Culture', year: '2021' },
+  { name: 'William Raveis', meta: 'Digital Marketing Specialist', year: '2021' },
 ];
 
 export default function WorkList() {
