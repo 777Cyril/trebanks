@@ -13,7 +13,7 @@ function App() {
         <Hero />
       </div>
       <WorkList />
-      <Archive />
+      {/* <Archive /> */}
       <Contact />
     </>
   );
